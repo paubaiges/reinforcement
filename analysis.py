@@ -21,49 +21,44 @@
 
 def question2():
     answerDiscount = 0.9
-    answerNoise = 0.2
+    answerNoise = 0
     return answerDiscount, answerNoise
 
 def question3a():
-    answerDiscount = None
-    answerNoise = None
-    answerLivingReward = None
+    answerDiscount = 1   # Look for all rewards
+    answerNoise = 0.2   # Low exeploration
+    answerLivingReward = -3  # Find solution fast
     return answerDiscount, answerNoise, answerLivingReward
-    # If not possible, return 'NOT POSSIBLE'
 
 def question3b():
-    answerDiscount = None
-    answerNoise = None
-    answerLivingReward = None
+    answerDiscount = 0.4 # Medium future rewards importance
+    answerNoise = 0.3   # Little bit more exploration
+    answerLivingReward = -0.5  # Agent can live more time
     return answerDiscount, answerNoise, answerLivingReward
-    # If not possible, return 'NOT POSSIBLE'
 
 def question3c():
-    answerDiscount = None
-    answerNoise = None
-    answerLivingReward = None
+    answerDiscount = 1  # High future rewars importance
+    answerNoise = 0  # No exploration noise
+    answerLivingReward = -3  # Fast way
     return answerDiscount, answerNoise, answerLivingReward
-    # If not possible, return 'NOT POSSIBLE'
 
 def question3d():
-    answerDiscount = None
-    answerNoise = None
-    answerLivingReward = None
+    answerDiscount = 1  # High future rewars importance
+    answerNoise = 0.5  # More exploration now
+    answerLivingReward = 0 # Agent can go slow
     return answerDiscount, answerNoise, answerLivingReward
-    # If not possible, return 'NOT POSSIBLE'
 
 def question3e():
-    answerDiscount = None
-    answerNoise = None
-    answerLivingReward = None
+    answerDiscount = 0
+    answerNoise = 0
+    answerLivingReward = 100  # Just compansate agent for living
     return answerDiscount, answerNoise, answerLivingReward
     # If not possible, return 'NOT POSSIBLE'
 
 def question6():
     answerEpsilon = None
     answerLearningRate = None
-    return answerEpsilon, answerLearningRate
-    # If not possible, return 'NOT POSSIBLE'
+    return 'NOT POSSIBLE'
 
 if __name__ == '__main__':
     print 'Answers to analysis questions:'
